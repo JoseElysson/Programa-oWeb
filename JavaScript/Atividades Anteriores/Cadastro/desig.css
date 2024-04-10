@@ -1,0 +1,14 @@
+*{
+text-align: left;
+}
+#Name, #E-mail, #senha{
+    height: 25px;
+    width: 10vw;
+    border: solid 1px black;
+}
+#Name{
+
+}
+#E-mail{
+
+}

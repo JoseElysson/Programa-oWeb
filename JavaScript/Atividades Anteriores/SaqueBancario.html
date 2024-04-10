@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Saldo bancario </title>
+</head>
+<body>
+    <form>
+    <p> Saldo: </p><input type="number" id="numero" readonly value="1500">
+    <p> Nome: <input type="nome" id="nome"> </p>
+    <p> Saque: <input type="number" id="senha"> </p>
+    <button type="button" onclick="obterDados()">Confirma</button>
+    </form>
+    <script>
+        function obterDados() {
+            // alert("ok");
+            let nome = parseFloat(document.getElementById("senha").value); //obtem valor do campo
+            //alert(nome); //exibe valor obtido 
+            let Numero = parseFloat(document.getElementById("numero").value);
+            if(Numero>=nome){
+            let op = Numero-nome;
+            document.getElementById("numero").value=op;
+            alert("Seu saldo agora é de:");
+            alert(op);
+            }else if(Numero<=nome){
+            alert ("Saque indisponivel")
+            }
+        }
+    </script>
+</body>
+</html>

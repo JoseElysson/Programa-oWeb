@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="portugues">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="desig.css">
+</head>
+<body>
+    <form>
+        <label for="Name"> Nome: </label>
+        <input type="text" id="Name" oninput="name()">
+        <p></p>
+        <label for="E-mail">Email:</label>
+        <input type="text" id="E-mail" oninput="Mail()">
+
+        <p> Senha: <input type="password" id="senha" oninput="Senha()"> </p>
+    </form>
+    <script>
+        function name(){
+            let Nome = document.getElementById("Name").value;
+        function Mail(){
+            let Mail = document.getElementById("E-mail").value;
+        function Senha(){
+            let Senha = document.getElementById("senha").value;
+        
+            function identKeyPress(event){
+            if(event.keyCode === 13){
+                document.getElementById("E-mail").focus();
+                if(Nome == "Jose"){
+                    document.getElementById("senha").focus();
+                }
+            }
+        } } } }
+        document.addEventListener('keydown', identKeyPress());
+    </script>
+</body>
+</html>

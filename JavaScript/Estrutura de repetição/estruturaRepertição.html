@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Estrutura de Repertição em JS</title>
+</head>
+<body>
+    <script>
+        //for (let index = 0; index <= 10; index++) {
+        //    console.log(index);
+        //}
+        //for (let index = 10; index > 0; index--) {
+        //    console.log(index);
+        //}
+        let marcas = ["Asus","LG","Acer","Dell","Sansung","Positivo","Apple"];
+        //const element=array[index];
+        //console.log(marcas[1]); //LG
+        //console.log(marcas[3]); //Dell
+        //let sizeMarcas = marcas.length;
+        for (let i = 0; i < marcas.length; i++){
+        console.log(marcas[i]);
+        }
+    //let control = 0;     -- variavel de controle 
+    //while(control < 6){     -- condição de repetição
+    //console.log(`${control} - Javascript`);    -- Comandos do bloco serão executados enquanto a condição acima for verdaeira 
+    //console.log();    -- imprime o valor atual da variável de controle | valor impresso apenas para entendimento
+    //control++;     -- operação de incremento
+    //}
+
+    let control = 0;  //VC
+    while (control < 6) { //CR
+    console.log("Valor Atual:"+control); //concatenação padrão
+    console.log(`Valor Atual:${control}`); //Template string js
+    control++; //incremento
+    }
+
+    let cliente = ["maria","Claudia","Rosa","joão","josé","Pedro"];
+    for (let fem = 0 ; fem < 3 ; fem++) {
+        console.log("feminino:"+cliente[fem]);
+    }
+    let mas = 3;
+    while (mas < 6) {
+        console.log("masculino:"+cliente[mas]);
+        mas++;
+    }
+    let Objetos = {
+        p1:"C",
+        p2:"Python",
+        p3:"C++",
+        p4:"C#",
+        p5:"PHP"
+    }
+    for(let prop in Objetos){
+        console.log("Linguagem: "+ prop +" - "+Objetos[prop]);
+    }
+    let cursos = {
+        exatas:"Matematica",
+        humanas:"Historia",
+        tecnologia:"SI",
+        linguagem:"Letras",
+    }
+    for(let chaves in cursos){
+        console.log("Cursos: "+ chaves +" - "+cursos[chaves]);
+    }
+    </script>
+</body>
+</html>
